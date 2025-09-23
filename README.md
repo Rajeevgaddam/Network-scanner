@@ -8,7 +8,7 @@ for debian based
 # sudo apt install python3
 for redhat based
 # sudo dnf install python3
-# For older systems using yum:
+For older systems using yum:
 # sudo yum install python3
 Then we require tkinter module, cause this tool is a gui. so for that use the below command
 # sudo apt install python3-tk
