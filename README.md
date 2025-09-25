@@ -37,3 +37,26 @@ cd Network-scanner
 to start give this command
 
 python3 netscan.py
+
+
+For WINDOWS
+
+install python from official website www.python.org
+
+while installing makesure you select the tkinter option after selecting customize installation.
+
+we have to install  requests module to use this tool
+
+pip install requests
+
+now redirect to that tool path and give this command
+
+py netscan.py
+
+OR
+
+Double click on netscan.py file
+
+
+
+
