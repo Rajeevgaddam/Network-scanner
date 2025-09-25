@@ -85,6 +85,10 @@ class NetworkScannerGUI:
         self.active_text = scrolledtext.ScrolledText(active_frame, height=5, font=self.base_font)
         self.active_text.pack(fill="x", padx=10)
 
+        self.results_tree.tag_configure('active', background='#d0f0c0')   # light green
+        self.results_tree.tag_configure('inactive', background='#f8d7da') # light red
+
+
     def run_scan(self):
         ip_address = self.ip_entry.get()
         subnet_mask = self.subnet_entry.get()
@@ -152,7 +156,9 @@ class NetworkScannerGUI:
         self.reset_ui()
 
     def add_to_table(self, ip, status, location):
-        self.results_tree.insert('', 'end', values=(ip, status, location))
+        tag = 'active' if status == 'Active' else 'inactive'
+        self.results_tree.insert('', 'end', values=(ip, status, location), tags=(tag,))
+
 
     def append_active_ip(self, ip):
         self.active_text.insert(tk.END, f"{ip}\n")
