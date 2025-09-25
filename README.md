@@ -1,23 +1,24 @@
 # Network-scanner
 A network scanning tool with graphical user interface which will ping the given ip address and let to know weather the host is active or not. This tool can identify the location of the given ip address.
 
+<img width="796" height="629" alt="Screenshot 2025-09-25 144218" src="https://github.com/user-attachments/assets/c2f36018-4ff9-433e-8169-9078c2a0d0b1" />
 
-How to use:
+
+# How to use:
+
 make sure python3 is available in your device. if your os is linux based, then most of the linux based distributions will have python in-built. 
 to make sure give the below command
 
 
 python3 --version
 
-
-
 if not available, can install using the following commands 
 
-for debian based
+# for debian based
 
 sudo apt install python3
 
-for redhat based
+# for redhat based
 
 sudo dnf install python3
 
@@ -39,7 +40,7 @@ to start give this command
 python3 netscan.py
 
 
-For WINDOWS
+# For WINDOWS
 
 install python from official website www.python.org
 
